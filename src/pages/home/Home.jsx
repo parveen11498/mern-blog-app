@@ -10,7 +10,7 @@ import { useLocation } from "react-router";
 export default function Home() {
   const [posts, setPosts] = useState([]);
   const { search } = useLocation();
-  const API=  axios.create({baseURL:'https://p-mern-blog-app.herokuapp.com/api/'});
+  const API=  axios.create({baseURL:'https://mern-blog-app-backend.vercel.app/api/'});
   useEffect(() => {
     const fetchPosts = async () => {
       const res = await API.get("/posts" + search);

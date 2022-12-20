@@ -9,8 +9,8 @@ export default function SinglePost() {
   const location = useLocation();
   const path = location.pathname.split("/")[2];
   const [post, setPost] = useState({});
-  const API=  axios.create({baseURL:'https://p-mern-blog-app.herokuapp.com/api/'});
-  const PF = "https://p-mern-blog-app.herokuapp.com/images/";
+  const API=  axios.create({baseURL:'https://mern-blog-app-backend.vercel.app/api/'});
+  const PF = "https://mern-blog-app-backend.vercel.app/images/";
   const { user } = useContext(Context);
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");

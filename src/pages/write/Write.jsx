@@ -9,7 +9,7 @@ export default function Write() {
   const [desc, setDesc] = useState("");
   const [file, setFile] = useState(null);
   const { user } = useContext(Context);
-  const API=  axios.create({baseURL:'https://p-mern-blog-app.herokuapp.com/api/'});
+  const API=  axios.create({baseURL:'https://mern-blog-app-backend.vercel.app/api/'});
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newPost = {

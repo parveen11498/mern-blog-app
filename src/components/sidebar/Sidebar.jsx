@@ -5,7 +5,7 @@ import "./sidebar.css";
 
 export default function Sidebar() {
   const [cats, setCats] = useState([]);
-  const API=  axios.create({baseURL:'https://p-mern-blog-app.herokuapp.com/api/'});
+  const API=  axios.create({baseURL:'https://mern-blog-app-backend.vercel.app/api/'});
   useEffect(() => {
     const getCats = async () => {
       const res = await API.get("/categories");

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import "./register.css";
 
 export default function Register() {
-  const API=  axios.create({baseURL:'https://p-mern-blog-app.herokuapp.com/api/'});
+  const API=  axios.create({baseURL:'https://mern-blog-app-backend.vercel.app/api/'});
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

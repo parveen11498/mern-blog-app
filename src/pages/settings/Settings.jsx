@@ -12,8 +12,8 @@ export default function Settings() {
   const [success, setSuccess] = useState(false);
 
   const { user, dispatch } = useContext(Context);
-  const API=  axios.create({baseURL:'https://p-mern-blog-app.herokuapp.com/api/'});
-  const PF = "https://p-mern-blog-app.herokuapp.com/images/"
+  const API=  axios.create({baseURL:'https://mern-blog-app-backend.vercel.app/api/'});
+  const PF = "https://mern-blog-app-backend.vercel.app/images/"
 
   const handleSubmit = async (e) => {
     e.preventDefault();

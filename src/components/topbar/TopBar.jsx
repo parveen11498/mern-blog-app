@@ -5,7 +5,7 @@ import "./topbar.css";
 
 export default function TopBar() {
   const { user, dispatch } = useContext(Context);
-  const PF = "https://p-mern-blog-app.herokuapp.com/images/"
+  const PF = "https://mern-blog-app-backend.vercel.app/images/"
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
